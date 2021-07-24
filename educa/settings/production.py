@@ -16,11 +16,11 @@ ADMINS = (
     ('Wellington I', 'email@mydomain.com'),
 )
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['educaproject.com', 'www.educaproject.com']
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {}
+    'default': env.db(),
 }
