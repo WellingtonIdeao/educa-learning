@@ -24,3 +24,6 @@ ALLOWED_HOSTS = ['educaproject.com', 'www.educaproject.com']
 DATABASES = {
     'default': env.db(),
 }
+
+SECURE_SSL_REDIRECT = True
+CSRF_COOKIE_SECURE = True
